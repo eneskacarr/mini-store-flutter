@@ -136,12 +136,15 @@ Create a folder named **screenshots** inside the project and add the following i
 Example:
 
 ```
-screenshots/
-├── splash.png
-├── login.png
-├── products.png
-├── product_detail.png
-└── cart.png
+![Splash](screenshots/Splash.png)
+
+![Login](screenshots/Login.png)
+
+![Home](screenshots/Home.png)
+
+![Cart](screenshots/Cart.png)
+
+![Order_Completed](screenshots/Order_Completed.png)
 ```
 
 ---

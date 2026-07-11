@@ -1,53 +1,59 @@
 # 🛍️ Mini Store - Flutter Mobile Application
 
-## 📌 Project Overview
-
-Mini Store is a simple e-commerce mobile application developed with Flutter. The application allows users to log in, browse products, search for items, view product details, add products to a shopping cart, and simulate the checkout process.
-
-The project was developed as part of a Flutter training program to demonstrate the fundamentals of mobile application development, including UI design, navigation, API integration, local storage, and state management.
+A simple e-commerce mobile application developed with **Flutter**. This project demonstrates the fundamentals of mobile application development, including authentication, REST API integration, local storage, navigation, reusable UI components, and shopping cart management.
 
 ---
 
-## ✨ Features
+## 📱 Features
+
+### Authentication
 
 * Splash Screen
 * User Login
-* Local data storage using SharedPreferences
-* Product listing from REST API
-* Product search functionality
-* Product detail page
-* Shopping cart system
-* Cart badge showing the number of selected products
-* Remove items from cart
+* Logout
+* Persistent login using SharedPreferences
+
+### Product Management
+
+* Fetch products from REST API
+* Product Grid View
+* Product Search
+* Product Detail Page
+
+### Shopping Cart
+
+* Add products to cart
+* Remove products from cart
 * Clear cart
+* Cart badge displaying selected item count
 * Checkout simulation
-* Logout functionality
-* Responsive Material Design UI
 
----
+### User Interface
 
-## 📱 Application Screens
-
-* Splash Screen
-* Login Screen
-* Product List Screen
-* Product Detail Screen
-* Shopping Cart Screen
-
----
-
-## 🛠️ Technologies Used
-
-* Flutter
-* Dart
 * Material Design
-* HTTP Package
-* SharedPreferences
-* Fake Store API
+* Responsive Layout
+* Reusable Widgets
+* Clean UI
 
 ---
 
-## 📂 Project Structure
+## 📸 Screenshots
+
+| Splash | Login |
+|--------|-------|
+| ![](screenshots/Splash.png) | ![](screenshots/Login.png) |
+
+| Home | Cart |
+|------|------|
+| ![](screenshots/Home.png) | ![](screenshots/Cart.png) |
+
+| Order Completed |
+|-----------------|
+| ![](screenshots/Order_Completed.png) |
+
+---
+
+## 🏗 Project Structure
 
 ```text
 lib/
@@ -70,52 +76,76 @@ lib/
 │   ├── product_detail_screen.dart
 │   └── cart_screen.dart
 │
+├── screenshots/
+│   ├── Splash.png
+│   ├── Login.png
+│   ├── Home.png
+│   ├── Cart.png
+│   └── Order_Completed.png
+│
 └── main.dart
 ```
 
 ---
 
+## 🛠 Technologies Used
+
+* Flutter
+* Dart
+* Material Design
+* HTTP Package
+* SharedPreferences
+* Fake Store API
+
+---
+
 ## 🌐 API
 
-Product data is retrieved from:
+Product data is retrieved from the Fake Store API:
 
 https://fakestoreapi.com/products
 
 ---
 
-## 📦 Packages
+## 📦 Dependencies
 
 ```yaml
 dependencies:
   flutter:
     sdk: flutter
-  http:
-  shared_preferences:
+  http: ^1.5.0
+  shared_preferences: ^2.5.3
 ```
 
----
-
-## ▶️ Getting Started
-
-1. Clone the repository
-
-```bash
-git clone https://github.com/yourusername/mini-store.git
-```
-
-2. Navigate to the project directory
-
-```bash
-cd mini-store
-```
-
-3. Install dependencies
+Install all dependencies:
 
 ```bash
 flutter pub get
 ```
 
-4. Run the application
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/eneskacarr/mini-store-flutter.git
+```
+
+### 2. Navigate to the project folder
+
+```bash
+cd mini-store-flutter
+```
+
+### 3. Install dependencies
+
+```bash
+flutter pub get
+```
+
+### 4. Run the application
 
 ```bash
 flutter run
@@ -123,68 +153,68 @@ flutter run
 
 ---
 
-## 📸 Screenshots
+## 📚 Flutter Concepts Demonstrated
 
-Create a folder named **screenshots** inside the project and add the following images:
-
-* splash.png
-* login.png
-* products.png
-* product_detail.png
-* cart.png
-
-Example:
-
-```
-![Splash](screenshots/Splash.png)
-
-![Login](screenshots/Login.png)
-
-![Home](screenshots/Home.png)
-
-![Cart](screenshots/Cart.png)
-
-![Order_Completed](screenshots/Order_Completed.png)
-```
+* Stateful Widgets
+* Stateless Widgets
+* Navigation
+* Route Arguments
+* REST API Integration
+* HTTP Requests
+* JSON Parsing
+* Model Classes
+* SharedPreferences
+* Local Storage
+* Search & Filtering
+* GridView
+* ListView
+* Reusable Components
+* Basic State Management
 
 ---
 
 ## 🚀 Flutter Version
 
-```
-Flutter 3.x
-Dart 3.x
+```text
+Flutter 3.44.4 (Stable)
+Dart 3.12.2
+DevTools 2.57.0
 ```
 
-You can check your installed version using:
+---
 
-```bash
-flutter --version
-```
+## 🚧 Future Improvements
+
+* User Registration
+* Product Categories
+* Favorites (Wishlist)
+* Dark Mode
+* Product Rating Filter
+* Order History
+* Firebase Authentication
+* Online Payment Integration
 
 ---
 
 ## 🎯 Learning Outcomes
 
-This project demonstrates the following Flutter concepts:
+This project was developed to practice:
 
-* Stateful & Stateless Widgets
-* Navigation
-* Route Arguments
-* GridView
-* ListView
-* REST API Integration
-* JSON Parsing
-* Model Classes
-* Local Storage
-* Search & Filtering
-* Basic State Management
-* Reusable Components
+* Flutter UI development
+* Widget composition
+* Navigation between screens
+* REST API consumption
+* JSON serialization
+* Local data persistence
+* Search functionality
+* Shopping cart logic
+* Reusable component design
+* Mobile application architecture
 
 ---
 
 ## 👨‍💻 Developer
 
-**Furkan Kaçar**
+**Enes Kacar**
 
-Developed as a Flutter training project for educational purposes.
+Developed as part of a Flutter training program for educational purposes.
